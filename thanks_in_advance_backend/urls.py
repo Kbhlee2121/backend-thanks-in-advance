@@ -19,16 +19,8 @@ from rest_framework import routers
 from base import views
 
 
-# router = routers.DefaultRouter()
-# router.register(r'userprofiles', views.UserProfileView, 'userprofile')
-# router.register(r'wishlists', views.WishListView, 'wishlist')
-# router.register(r'items', views.ItemView, 'item')
-
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include('base.urls')),
     path('api/', include('base.urls')),
-    # path('api/', include(router.urls))
-    # path('', UserProfileView.as_view(), name='user-profile')
+
 ]

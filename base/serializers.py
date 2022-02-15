@@ -9,15 +9,12 @@ class UserSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class WishListSerializer(serializers.ModelSerializer):
-    # items_list = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
     items_list = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
     class Meta:
         model = WishList
         fields = ('id','user','title','created','description','items_list')
 
 class ItemSerializer(serializers.ModelSerializer):
-    # queryset=WishList.objects.all()
-    # wishlist = WishListSerializer(read_only=True)
     class Meta:
         model = Item
         fields = ('id','item_name','claimed','item_link','item_description','item_image','wishlist')

@@ -38,6 +38,3 @@ urlpatterns = [
     # LOGIN
     path('login/', views.login, name="login"),
 
-
-    # path('', views.UserProf/ileView.as_view({'get': 'get_userprofile'})),
-]

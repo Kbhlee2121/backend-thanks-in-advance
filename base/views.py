@@ -223,30 +223,3 @@ def login(request):
         return Response(serializer.data, status=status.HTTP_200_OK)
     else:
         return Response(status=status.HTTP_401_UNAUTHORIZED)
-
-
-
-# @api_view(['GET'])
-# def viewItem(request, list, item_id):
-#     wishlist = WishList.objects.get(id=list)
-#     item = Item.objects.values_list('wishlist', 'id')
-#     serializer = ItemSerializer(item)
-#     return Response(serializer.data)
-    
-
-#viewsets class provides implementation for CRUD be default
-# class UserProfileView(viewsets.ModelViewSet):
-
-#     serializer_class = UserProfileSerializer
-#     queryset = UserProfile.objects.all()
-
-#     # def get_userprofile(self, *args):
-#     #     return self.request.UserProfile.objects.all()
-
-# class WishListView(viewsets.ModelViewSet):
-#     serializer_class = WishListSerializer
-#     queryset = WishList.objects.all()
-
-# class ItemView(viewsets.ModelViewSet):
-#     serializer_class = ItemSerializer
-#     queryset = Item.objects.all()
