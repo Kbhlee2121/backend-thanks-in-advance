@@ -37,4 +37,5 @@ urlpatterns = [
 
     # LOGIN
     path('login/', views.login, name="login"),
+]
 
