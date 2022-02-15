@@ -1,1 +1,1 @@
-web: gunicorn thanks-in-advance-backend.wsgi
+web: gunicorn backend_thanks_in_advance.wsgi
