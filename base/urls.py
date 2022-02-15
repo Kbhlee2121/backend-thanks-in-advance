@@ -33,7 +33,6 @@ urlpatterns = [
     path('item-update/<str:pk>/', views.updateItem, name="update-item"),
     # delete item
     path('item-delete/<str:pk>/', views.deleteItem, name="delete-item"),
-    # path('view-item/<str:list>/<str:item_id>/', views.viewItem, name="detail-view-item"),
 
     # LOGIN
     path('login/', views.login, name="login"),
