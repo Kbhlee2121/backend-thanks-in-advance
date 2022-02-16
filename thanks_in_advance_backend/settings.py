@@ -55,7 +55,8 @@ INSTALLED_APPS = [
 CORS_ALLOW_ALL_ORIGINS=False 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8000',
-    'http://localhost:3000'
+    'http://localhost:3000',
+    'https://suspicious-perlman-9d31e6.netlify.app/'
 ]
 
 CORS_ALLOW_CREDENTIALS = False
